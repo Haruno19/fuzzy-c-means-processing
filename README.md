@@ -1,7 +1,6 @@
 # Fuzzy C-Means Clustering (Processing 4)
 Fuzzy C-Means Clustering algorithm implementation (and visualization) in Processing 4 
 
-## Gallery
 <table>
   <tr>
     <td> <img src=https://github.com/Haruno19/fuzzy-c-means-processing/assets/61376940/2e581334-6be3-4858-8c51-ed8981fe1bbb> </td>
