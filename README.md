@@ -36,7 +36,8 @@ The **parameter of fuzziness** is also variable, and can be set through the `flo
 The **degree of tolerance** (relative to the difference between the previous and current iterations' Centroids' features values) can too be set to any desired value through the `float tolerance` variable (default value is `0.005f`).
 
 ## Demo
-https://github.com/Haruno19/fuzzy-c-means-processing/assets/61376940/bb7ee99c-a805-4c21-999c-c5bc3a40d1ac
+https://github.com/Haruno19/fuzzy-c-means-processing/assets/61376940/2484e372-080e-4a87-9f2a-8185ea713507
+
 
 ## Setup
 At first, each Data Point is instantiated with two randomly generated features (stored in `ArrayList<PVector> data_points`), and a randomly generated degree of memebership for each Centroid (stored in a `float[][] distr` of dimensions `n_dp * n_cr`).  
