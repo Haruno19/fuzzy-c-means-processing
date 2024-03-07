@@ -106,7 +106,7 @@ void calculate_centroids()
 void calculate_distances()
 {
   //calculate the new membership values for each datapoint
-  // distr_ik = { SUM[j=0->n_cr](dist(i,k)^2 / dist(j,k)^2 )^1/*m-1) }^-1
+  // distr_ik = { SUM[j=0->n_cr](dist(i,k)^2 / dist(i,j)^2 )^1/*m-1) }^-1
   boolean same=true;
   float sum, new_distr;
   PVector p;
