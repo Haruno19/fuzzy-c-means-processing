@@ -9,7 +9,7 @@ ArrayList<PVector> centroids;
 int[] c_colors;
 float[][] distr;        //a n_dp x n_cr matrix that containes the memebrship for each data point
 
-boolean stop = false;   //whether or not centroids have moved in the last iteration (or the movement is below the tolerance level)
+boolean stop = false;   //whether or not degrees of membership for each datapoint have changed over the last iteration (or the difference is below the tolerance level)
 
 void setup()
 {
@@ -121,7 +121,7 @@ void calculate_distances()
         sum+= pow(p.dist(centroids.get(k)),2)/pow(p.dist(j),2);
       }
       new_distr = pow(pow(sum,1/(m-1)),-1);
-      same = same & (abs(distr[i][k]-new_distr) < tolerance);  //checks whether the centroids are still positioned at the same coordinates (or within the tolerance level)
+      same = same & (abs(distr[i][k]-new_distr) < tolerance);  //checks whether the degree of membership for each datapoint has changed (or the difference is within the tolerance level)
       distr[i][k] = new_distr;
     }
   }
