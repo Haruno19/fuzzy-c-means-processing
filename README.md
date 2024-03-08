@@ -50,7 +50,7 @@ Each iteration of the algorithm consists of two (plus one) steps:
 ### Calculating the Centroids' features
 For each **Centroid** $V_k$ with $k \in [0, ncr)$, the **features** (noted as $x$ and $y$ respectively, both for Centroids and Data Points) are calculated as such:  
 ### $V_{kz} = \frac{\sum_{i=0}^{ndp-1} \gamma_{ik}^m * P_{iz}}{\sum_{i=0}^{ndp-1} \gamma_{ik}^m}$  
-with $z \in `\{x, y\}`$ and where $\gamma_{ik}$ is the **degree of membership** of the Data Point $P_i$ to the Centroid $V_k$.
+with $z \in \lbrace x, y\rbrace$ and where $\gamma_{ik}$ is the **degree of membership** of the Data Point $P_i$ to the Centroid $V_k$.
 
 ### Calculating the new degrees of membership
 For each **Data Point** $P_i$ with $i \in [0, ndp)$ the **degree of memebership** $\gamma_{ik}$ with $k \in [0, ncr)$ (or, the degree of memebership of the Data Point $P_i$ to the Centroid $V_k$) is calculated as such:  
